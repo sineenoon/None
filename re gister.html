@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> re gister</title>
+    <style>
+        .item-H{grid-area:header;
+                height: 250px;
+                text-align: center;}
+        .item-L{grid-area: lside;
+                height: 450px;}
+        .item-M{grid-area: main;
+                height: 450px;}
+        .item-F{grid-area: footer;
+                height: 100px;
+              }
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+            'header header header header header'
+            'lside  main main main main'
+            'footer footer footer footer footer';
+            background-color:rgb(45, 9, 14);
+            grid-gap:4px;
+            padding: 10px;}
+        .item{
+              background-color: rgb(228, 217, 226);
+              border:5px solid rgb(202, 24, 24); 
+              padding:30px; 
+              font-size: 20px;
+              text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="item-H item">
+        <img class="img1" src="image/logo1.jpg" 
+        style="max-width: 50%;height: auto;"  alt="toplogo">
+        <h2>SEO CENTER</h2>
+        </div>
+
+        <div style="font-size: 15px;"
+        class="item-L item"><h2>Menu</h2>
+        <li><a href="in dex.html">หน้าหลัก</a></li><br>
+        <li><a href="re gister.html">สมัครสมาชิก</a></li><br>
+        </div>
+    
+    <div  style="font-size: 15px;"
+    class="item-M item"><h2>สมัครสมาชิก</h2>
+    <form action="https://httpbin.org/get" method="post">
+<fieldset>
+    <label for="firstname">ชื่อ</label><br>
+    <input type="text" id="firstname" name="user_name"><br>
+    <label for="firstname">นามสกุล</label><br>
+    <input type="text" id="lasttname" name="user_name"><br>
+    <label for="birthday">วันเดือนปีเกิด</label><br>
+    <input type="date" id="birthday" name="birthday_date"><br>
+    <label for="Number">เบอร์โทรศัพท์</label><br>
+    <input type="text" id="firstname" name="user_number"><br>
+    <label for="E-mail">ที่อยู่อีเมล</label><br>
+    <input type="text" id="E-mail" name="user_e-mail"><br>
+    <input type="radio" id="m" name="gender" value="male">
+    <label for="M">ชาย</label>
+    <input type="radio" id="f" name="gender" value="female">
+    <label for="f">หญิง</label><br>
+    <label for="ment">ที่อยู่ในการจัดส่ง</label><br>
+    <textarea id="ment" name="user_address"rows=4 cols="30">ลงข้อมูลการจัดส่ง</textarea><br>
+    <input type="submit" value="ส่งข้อมูล">
+    </fieldset>
+    </form>
+</div>
+        
+
+<div style="font-size: 15px;"
+class="item-F item"> สถานที่ตั้ง<br>
+ห้างสรรพสินค้า SEO CENTER
+<address>
+    299 ซอย เจริญนคร 5 ถนน เจริญนคร แขวง คลองต้นไทร <br>
+    เขต คลองสาน เข้าถึงผ่านแม่น้ำ,<br>
+     กรุงเทพมหานคร (กทม.) 10600 ไทย<br>
+
+</address></div>
+    </div>
+</body>
+</html>

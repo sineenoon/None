@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .item-H{grid-area:header;
+                height: 70px;}
+        .item-L{grid-area: lside;
+                height: 420px;}
+        .item-M{grid-area: main;
+                height: 420px;}
+        .item-F{grid-area: footer;
+                height: 30px;}
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+            'header header header header header'
+            'lside main main main main'
+            'footer footer footer footer footer';
+            background-color: bisque;
+            grid-gap:5px;
+            padding:10px;}
+        .item{
+              background-color: #6c98f8;
+              border:2px solid rgb(252, 255, 66); 
+              padding:30px; 
+              font-size: 20px;
+              text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="item-H item">
+                <img src="" style="width: 100%;height:auto;">
+        </div>
+        <div class="item-L item">
+     <h1>Menu</h1>
+     <h1><ul>
+         <li><a href="Index.html" target="_blank">
+             สินค้า</a></li>
+         <li><a href="Register.html" target="_blank">
+             สมัครสมาชิก</a></li>
+             
+         </h1></ul> 
+        </div>
+        <div class="item-M item">Main</div>
+        <div class="item-F item">Footer</div>
+    </div>
+</body>
+</html>
